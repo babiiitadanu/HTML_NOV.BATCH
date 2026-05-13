@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1> HTML registrstion form</h1>
+    <main> <form action="#" method="get"></main>
+
+    <div><br>
+        <!-- user first name -->
+        <label for="first name">first name  </label>
+        <input type="text" name="first name" id="first-name"  required placeholder="enter your first name" pattern="[A-Za-z]{,}" minlength="3" maxlength=" 10" autofocus> 
+    </div> 
+    <div><br>
+         <!-- user last name -->
+        <label for="last name" >last name </label>
+        <input type="text" id="last-name" placeholder="enter your last name " minlength="3" maxlength="10" pattern="[A-Za-z]{,}">
+    </div> 
+    <!-- user name -->
+     <div><br>
+        <label for="username">username</label>
+        <input type="text" name="user-name" id="username" placeholder="enter your user name" title="please enter the correct name" pattern="[A-Za-z0-9_]{4,10}" minlength="3"   maxlength="10" required>
+     </div>
+    <div><br>
+        <!-- user age -->
+        <label for ="age">Age</label>
+        <input type="number" id="userage" name="age" value="age" placeholder="enter your age" title="enter your valid age"
+        pattern="[0-9]{1,3}"   required>
+    </div>
+    <div><br>
+        <!-- user email -->
+        <label for=" user emai">email</label>
+        <input type="email" id="email" name="user-email" value=""  
+        placeholder="enter your email" title="enter valid email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"  minlength="10" maxlength="25" required>
+    </div>
+    <div><br>
+        <!-- phone number -->
+        <label for="phone number">enter number</label>
+        <input type="tel" id="phone-number" name="usernumber" value="" placeholder="enter your number" pattern="(\+91)?[6-9][0-9]{9}" title="enter the valid number"  max="10" required>
+    </div>
+    <div><br>
+        <!-- user password -->
+        <label for="user password"> enter password</label>
+        <input type="password" id="user-password" name="user-password" placeholder="enter your password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&]).{8,}" title="invalid email,min 8 char allow, special char allow" minlenght="8" maxlength="15" required>
+    </div>
+    <div><br>
+        <!-- user conform password -->
+        <label for="conform password">enter conform password</label>
+        <input type ="password" id="conform-password" name="conform-password" placeholder="enter conform password"  pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&]).{8,}"  title="invalid password"      minlength="8" maxlength="15" required>
+    </div>
+    <div><br>
+        <!-- user date of birth -->
+        <label for="date of birth">date of birth</label>
+        <input type="date"  id="date-of-birth" name="userDOB"    max="2007-4-22" required>
+    </div>
+    <div><br>
+        <!-- city -->
+        <label for="city">enter your city</label>
+        <select id="usercity" name="city" >
+        <option value="delhi" >delhi</option>
+        <option value="mumbai">mumbai</option>
+        <option value="dheradum">dheradun</option>  
+        <option value="haldwani">Bageshwar</option>
+        </select>
+    </div>
+    <div><br>
+        <!-- <h3> user skil</h3> -->
+         <label for="skill">skill:</label>
+        <label for="clang">c language</label>
+        <input type="checkbox" id="clang" name="skill" value="c">
+        <label for="py lang">py language</label>
+        <input type="checkbox" id="pylang" name="skill" value="py">
+        <label for="java lang"> java language</label>
+        <input type="checkbox" id="javalang" name="skill" value="java">
+    </div>     
+    <div><br>
+        <!-- user website -->
+        <label for="website">enter your website</label>
+        <input type="url" name="website" id="userweb" value="" placeholder="link" pattern="ttps?:\/\/(www\.)?[a-z0-9-]+\.[a-z]{2,}.*"  required >
+    </div>    
+
+    <div><br>
+        <!-- <h4>gender</h4> -->
+         <label for="gender">gender:</label>
+        <label for="male">male</label>
+        <input type="radio" id="male"  name="gender"  value="male">
+        <label for ="female">female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="other">other</label>
+        <input type="radio" id="other" name="gender" value="other">
+    </div>
+     <div><br>
+        <!-- user image -->
+        <label for=" user image">enter your image</label>
+        <input type="file" id="user-image"  >
+    </div><br>
+    <!-- about user -->
+    <label for="about">About yourself</label>
+    <textarea name="about" id="about-user" rows="4" cols="40" placeholder="weite about yourself" pattern="[A-Za-z]"></textarea>
+    <div><br>
+        <!-- button -->
+        <!-- <label for="button"></label> -->
+        <input type="submit" id="buttton" value="submit">
+        <!-- <label for="button"></label> -->
+        <input type="Reset" name="button" value="Reset">
+    </div>
+
+</body>
+</html>
